@@ -21,7 +21,7 @@ This project was created to play around with the Whisper and ChatGPT APIs from O
 
 Open up `pages/index.tsx` and note the following areas that can be configured:
 
-````
+```javascript
 // roles
 const botRolePairProgrammer =
   'You are an expert pair programmer helping build an AI bot application with the OpenAI ChatGPT and Whisper APIs. The software is a web application built with NextJS with serverless functions, React functional components using TypeScript.';
@@ -75,7 +75,7 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-````
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
