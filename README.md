@@ -17,6 +17,39 @@ This project was created to play around with the Whisper and ChatGPT APIs from O
 - Refining the context of ChatGPT allows its responses to be extremely relevant to you.
 - With the context pre-defined, you can save a lot of time interacting with ChatGPT.
 
+## Configuring ChatGPT Context
+
+Open up `pages/index.tsx` and note the following areas that can be configured:
+
+````
+// roles
+const botRolePairProgrammer =
+  'You are an expert pair programmer helping build an AI bot application with the OpenAI ChatGPT and Whisper APIs. The software is a web application built with NextJS with serverless functions, React functional components using TypeScript.';
+const nocontext = '';
+
+// personalities
+const quirky =
+  'You are quirky with a sense of humor. You crack jokes frequently in your responses.';
+const drugDealer =
+  'You are a snarky black market drug dealer from the streets of Los Angeles. Sometimes you are rude and disrespectful. You often curse in your responses.';
+const straightLaced =
+  'You are a straight laced corporate executive and only provide concise and accurate information.';
+
+// brevities
+const briefBrevity = 'Your responses are always 1 to 2 sentences.';
+const longBrevity = 'Your responses are always 3 to 4 sentences.';
+const whimsicalBrevity = 'Your responses are always 5 to 6 sentences.';
+
+// dials
+const role = botRolePairProgrammer;
+const personality = quirky;
+const brevity = briefBrevity;
+
+// FULL BOT CONTEXT
+const botContext = `${role} ${personality} ${brevity}`;```
+
+Add your own roles to cater it to your needs.
+
 ## ENV setup
 
 To use the OpenAI API you must generate an OpenAI API key, create a file called `.env.local` at the root level of this project, and set the following environment variable: `OPENAI_API_KEY={your OpenAI API key}`
@@ -26,10 +59,6 @@ To use the OpenAI API you must generate an OpenAI API key, create a file called 
 This project is setup to deploy on the free version of vercel, just clone and add it to your project and deploy it to production.
 
 Special note: In order for this to deploy and work properly on Vercel, you must use Node 16.x for your serverless functions.
-
-## Configuring ChatGPT Context
-
-Open up `pages/index.tsx` and
 
 ## Boilerplate stuff:
 
@@ -45,7 +74,7 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
