@@ -46,7 +46,8 @@ const personality = quirky;
 const brevity = briefBrevity;
 
 // FULL BOT CONTEXT
-const botContext = `${role} ${personality} ${brevity}`;```
+const botContext = `${role} ${personality} ${brevity}`;
+```
 
 Add your own roles to cater it to your needs.
 
