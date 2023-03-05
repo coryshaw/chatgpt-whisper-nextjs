@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "pages/api/openai.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    },
+    "pages/api/whisper.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
