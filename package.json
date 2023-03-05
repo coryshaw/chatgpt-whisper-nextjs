@@ -1,7 +1,7 @@
 {
-  "name": "sirigpt",
-  "version": "0.1.0",
-  "private": true,
+  "name": "chatgpt-whisper-nextjs",
+  "version": "1.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
